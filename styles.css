@@ -1,0 +1,333 @@
+/* styles.css */
+
+/* Variaveis */
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #333;
+    --background-light: #f8f9fa;
+    --text-color-dark: #666;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--background-light);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+.navbar-toggler {
+    border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28%255%2C%255%2C%255%2C%201%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .nav-link {
+    color: var(--secondary-color) !important;
+    font-weight: 500;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #28a745 !important;
+    background-color: #ffffff !important;
+    border-radius: 4px;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color) !important;
+    background-color: var(--background-light) !important;
+    border-bottom: 4px solid var(--primary-color);
+    border-radius: 0;
+}
+
+/* Hero Section */
+.hero-banner {
+    background-image: url('images/hero-image-5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    position: relative;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Seção de Características */
+#features {
+    padding: 60px 0;
+    background-color: var(--background-light);
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+#features h4 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+#features p {
+    color: var(--text-color-dark);
+}
+
+/* Seção de Testemunhos */
+#testimonials {
+    padding: 60px 0;
+}
+
+#testimonials h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+#features .img-fluid {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.testimonial h5 {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+.testimonial p {
+    color: var(--text-color-dark);
+}
+
+/* Seção de Planos de Preços */
+#pricing {
+    padding: 60px 0;
+    background-color: var(--background-light);
+}
+
+#pricing h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.pricing-table {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pricing-table h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.pricing-table .price {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.pricing-table ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-table ul li {
+    font-size: 1rem;
+    color: var(--text-color-dark);
+    margin-bottom: 10px;
+}
+
+.pricing-table .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover */
+.pricing-table:hover {
+    transform: translateY(-15px);
+}
+
+.pricing-table .btn {
+    margin-top: auto;
+}
+
+
+/* Seção de Contato */
+#contact {
+    padding: 60px 0;
+    background-color: var(--background-light);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+}
+
+#contact .form-control {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    transition: border-color 0.3s ease;
+}
+
+#contact .form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.2);
+    outline: none;
+}
+
+#contact textarea.form-control {
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+#contact button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+
+/* Footer */
+#footer {
+    background-color: var(--secondary-color);
+    color: var(--background-light);
+    padding: 40px 0;
+}
+
+#footer h5 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+#footer p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+#footer a {
+    color: var(--background-light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: var(--primary-color);
+}
+
+#footer .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+#footer .list-unstyled li {
+    margin-bottom: 10px;
+}
+
+#footer .fab {
+    font-size: 1.5rem;
+    color: var(--background-light);
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+#footer .fab:hover {
+    color: var(--primary-color);
+}
+
+#footer hr {
+    border-top: 1px solid #555;
+    margin: 20px 0;
+}
+
+#footer p.small {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* Custom Section Padding */
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}

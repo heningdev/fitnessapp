@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness App - Bem-Estar e Saúde</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fontawesome Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">FitnessApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Características</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Testemunhos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricing">Planos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="jumbotron text-center hero-banner">
+        <div class="container">
+            <h1 class="display-4">Bem-vindo ao FitnessApp</h1>
+            <p class="lead">Seu parceiro na jornada para uma vida mais saudável e ativa.</p>
+            <a href="#features" class="btn btn-primary btn-lg">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section id="features" class="text-center">
+        <div class="container">
+            <h2 class="mb-5">Principais Características</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/feature-2a.jpg" alt="Atividade Física" class="img-fluid mb-3">
+                    <h4>Atividade Física</h4>
+                    <p>Mantenha-se em movimento com planos de treino personalizados para você.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/feature-4.png" alt="Alimentação Saudável" class="img-fluid mb-3">
+                    <h4>Alimentação Saudável</h4>
+                    <p>Receitas e planos alimentares que promovem uma vida saudável.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/feature-5.png" alt="Monitoramento" class="img-fluid mb-3">
+                    <h4>Monitoramento</h4>
+                    <p>Acompanhe seu progresso com relatórios detalhados e métricas de saúde.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testemunhos -->
+    <section id="testimonials" class="text-center bg-light">
+        <div class="container">
+            <h2 class="mb-5">O que nossos clientes dizem</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="images/testimonial-1.jfif" alt="Cliente Satisfeito"
+                            class="img-fluid rounded-circle mb-3">
+                        <h5>João Silva</h5>
+                        <p>"Este aplicativo transformou minha vida! Estou mais saudável e ativo do que nunca."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="images/testimonial-2.jfif" alt="Cliente Satisfeito"
+                            class="img-fluid rounded-circle mb-3">
+                        <h5>Pedro Neves</h5>
+                        <p>"Minha vida mudou depois que eu comecei a utilizar o aplicativo."</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial">
+                        <img src="images/testimonial-4.jfif" alt="Cliente Satisfeito"
+                            class="img-fluid rounded-circle mb-3">
+                        <h5>Larissa Santos</h5>
+                        <p>"Me ajudou a organizar minhas atividades físicas e melhorar minha alimentação."</p>
+                    </div>
+                </div>
+                <!-- Repita para mais testemunhos -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos de Preços -->
+    <section id="pricing" class="text-center">
+        <div class="container">
+            <h2 class="mb-5">Escolha seu Plano</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="pricing-table">
+                        <h3>Plano Básico</h3>
+                        <p class="price">R$19,99/mês</p>
+                        <ul class="list-unstyled">
+                            <li>Treinos Personalizados</li>
+                            <li>Acompanhamento de Progresso</li>
+                            <li>Planos Alimentares</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Assinar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-table">
+                        <h3>Plano Intermediário</h3>
+                        <p class="price">R$39,99/mês</p>
+                        <ul class="list-unstyled">
+                            <li>Treinos Personalizados</li>
+                            <li>Acompanhamento de Progresso</li>
+                            <li>Planos Alimentares</li>
+                            <li>Acesso a Nutricionistas</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Assinar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="pricing-table">
+                        <h3>Plano Avançado</h3>
+                        <p class="price">R$59,99/mês</p>
+                        <ul class="list-unstyled">
+                            <li>Treinos Personalizados</li>
+                            <li>Acompanhamento de Progresso</li>
+                            <li>Planos Alimentares</li>
+                            <li>Acesso a Nutricionistas</li>
+                            <li>Aulas ao Vivo</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Assinar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="text-center">
+        <div class="container">
+            <h2 class="mb-5">Entre em Contato</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" class="form-control" placeholder="Seu E-mail" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <input type="text" class="form-control" placeholder="Assunto" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Sua Mensagem" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Sobre Nós</h5>
+                    <p>Somos dedicados a ajudar você a alcançar seus objetivos de saúde e bem-estar.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#features">Funcionalidades</a></li>
+                        <li><a href="#testimonials">Testemunhos</a></li>
+                        <li><a href="#pricing">Planos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Siga-nos</h5>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <hr>
+            <p class="small">© 2024 FitnessApp. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Marcador de section -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            const sections = navLinks.forEach(link => {
+                const sectionId = link.getAttribute('href').substring(1);
+                const section = document.getElementById(sectionId);
+
+                if (section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+
+                    window.addEventListener('scroll', function () {
+                        const scrollPosition = window.pageYOffset + window.innerHeight / 2;
+
+                        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                            link.classList.add('active');
+                        } else {
+                            link.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
